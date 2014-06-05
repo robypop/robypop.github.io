@@ -98,22 +98,47 @@ img {
 }
 .site-description {
 	color: #404040;
-	font-family: 'pt_serifitalic', sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
 }
 .category {
 	font-size: 1.125em;
 	font-weight: bold;
 	text-transform: uppercase;
 }
-.popup-gallery {
+.controls {
+	position: relative;
+	margin: 20px 0;
+}
+.controls ul {
+	margin: 0;
+	padding: 0;
+}
+.controls li {
+	margin: 0 5px 10px 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+.controls a {
+	padding: 3px 12px;
+	text-decoration: none;
+	color: #999;
+	line-height: 100%;
+}
+.controls a:hover {
+	color: #000;
+}
+.controls .active a {
+	background: #999;
+	color: #fff;
+	border-radius: 5px;
+}
+.portfolio {
 	padding: 0;
 	list-style: none;
 	margin: 0 -10px;
 	overflow: hidden;
 }
-.popup-gallery li {
+.portfolio li {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -127,11 +152,14 @@ img {
 	width: 25%;
 	overflow: hidden;
 }
-.popup-gallery li:hover {
+.portfolio li:hover {
 	opacity: 0.5;
 }
-.popup-gallery li img {
+.portfolio li img {
 	margin: 0;
+}
+.portfolio .mix {
+	display: none;
 }
 
 /* =Layout
@@ -194,7 +222,7 @@ footer.entry-meta .sep {
 	content: '\1f4c5';
 }
 @media screen and (max-width: 480px) {
-	.popup-gallery li {
+	.portfolio li {
 		width: 50%;
 	}
 	img.alignleft, img.alignright {
@@ -207,7 +235,7 @@ footer.entry-meta .sep {
 }
  
 @media screen and (min-width : 481px) and (max-width: 768px) {
-	.popup-gallery li {
+	.portfolio li {
 		width: 33.3333%;
 	}
 }
