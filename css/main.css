@@ -6,6 +6,9 @@
 
 /* =Global
 ----------------------------------------------- */
+html {
+    overflow-y: scroll;
+}
 
 body {
 	color: #404040;
@@ -147,6 +150,7 @@ img {
 	-moz-transition: opacity .25s ease-in-out;
 	-webkit-transition: opacity .25s ease-in-out;
 	float: left;
+	text-align: center;
 	padding: 0 10px;
 	margin: 0 0 20px 0;
 	width: 25%;
@@ -174,6 +178,9 @@ img {
 	margin: 0 0 20px 0;
 	padding: 30px 0 0 0;
 	text-align: center;
+}
+.site-main {
+	overflow: hidden;
 }
 .site-footer {
 	text-align: center;
