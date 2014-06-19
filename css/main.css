@@ -140,6 +140,7 @@ img {
 	list-style: none;
 	margin: 0 -10px;
 	overflow: hidden;
+	min-height: 400px;
 }
 .portfolio li {
 	-webkit-box-sizing: border-box;
