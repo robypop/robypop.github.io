@@ -62,6 +62,7 @@ img {
 	text-align: center;
 }
 .site-navigation li {
+	text-transform: uppercase;
 	margin: 0.25em 0.75em;
 	padding: 0;
 	list-style: none;
@@ -69,13 +70,13 @@ img {
 }
 .site-navigation a {
 	text-decoration: none;
-	color: #999;
+	color: #404040;
 }
 .site-navigation a:hover {
-	color: #000;
+	color: #404040;
 }
 .site-navigation .current a {
-	color: #000;
+	color: #404040;
 }
 
 
@@ -128,7 +129,7 @@ img {
 	line-height: 100%;
 }
 .controls a:hover {
-	color: #000;
+	color: #404040;
 }
 .controls .active a {
 	background: #999;
@@ -173,7 +174,7 @@ img {
 #container {
 	max-width: 940px;
 	margin: 0 auto;
-	padding: 0 10px 0;
+	padding: 0 20px 0;
 }
 .site-header {
 	margin: 0 0 20px 0;
@@ -186,33 +187,17 @@ img {
 .site-footer {
 	text-align: center;
 }
-
-footer.entry-meta a {
-	color:#555;
-	text-decoration: none;
-}
-footer.entry-meta a:hover {
-	color: #0a836b;
-}
-footer.entry-meta .sep {
-	margin:0 8px;
-}
-.cat-links span, .tag-links span {
-	width:0;
-	display: inline-block;
-	text-indent:-9999em;
-}
 .icon {
 	margin:0 1.5em 0 0;
 	white-space: nowrap;
 }
 .icon:before {
-	color:#454545;
+	color:#404040;
 	font-family: "icons", sans-serif;
 	margin:0 0.5em 0 0;
 }
 .icon:hover:before {
-	color: #000;
+	color: #404040;
 }
 .comments-link:before {
 	content: '\e718';
