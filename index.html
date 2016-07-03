@@ -21,6 +21,23 @@
         <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+
+        <script>
+          $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html, body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+                }
+              }
+            });
+          });
+        </script>
     </head>
 
     <body>
@@ -62,14 +79,16 @@
                             <button class="filter" data-filter="all">All</button>
                             <button class="filter" data-filter=".webdesign">Web Design</button>
                             <button class="filter" data-filter=".gamedev">Game Dev</button>
+                            <button class="filter" data-filter=".illustration">Illustration</button>
                             <button class="filter" data-filter=".other">Other</button>
                         </nav>
                         <ul class="portfolio">
-                            <li class="mix webdesign"><a href="img/projects/1.jpg" title=""><img src="img/projects/thumbs/1.jpg"></a></li>
-                            <li class="mix webdesign"><a href="img/projects/2.jpg" title=""><img src="img/projects/thumbs/2.jpg"></a></li>
-                            <li class="mix webdesign"><a href="img/projects/3.jpg" title=""><img src="img/projects/thumbs/3.jpg"></a></li>
-                            <li class="mix gamedev"><a href="img/projects/4.png" title=""><img src="img/projects/thumbs/4.png"></a></li>
-                            <li class="mix other"><a href="img/projects/5.jpg" title=""><img src="img/projects/thumbs/5.jpg"></a></li>
+                            <li class="mix webdesign"><a href="img/projects/1.jpg" title="WordPress site for a client - www.organoduomomessina.it"><img src="img/projects/thumbs/1.jpg"></a></li>
+                            <li class="mix webdesign"><a href="img/projects/2.jpg" title="WordPress site for a client - www.messinarte.it"><img src="img/projects/thumbs/2.jpg"></a></li>
+                            <li class="mix gamedev"><a href="img/projects/4.png" title="Platform game prototype made with Unity 3D for my thesis on game development"><img src="img/projects/thumbs/4.png"></a></li>
+                            <li class="mix other"><a href="img/projects/5.jpg" title="Turing machine simulator made as a university project"><img src="img/projects/thumbs/5.jpg"></a></li>
+                            <li class="mix illustration"><a href="img/projects/6.jpg" title="Personal illustration"><img src="img/projects/thumbs/6.jpg"></a></li>
+                            <li class="mix illustration"><a href="img/projects/7.jpg" title="Personal illustration"><img src="img/projects/thumbs/7.jpg"></a></li>
                         </ul>
                     </div>
                 </section>
